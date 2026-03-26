@@ -18,7 +18,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
 
         <div className="flex-1 overflow-hidden bg-white/92">
           <div className="h-full overflow-y-auto flex justify-center items-start px-6 py-6">
-            <div className="bg-white rounded-2xl shadow-xl p-10 max-w-4xl w-full my-auto">
+            <div className="bg-white rounded-2xl shadow-xl px-10 pb-10 max-w-4xl w-full my-auto">
               {children}
             </div>
           </div>

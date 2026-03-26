@@ -11,7 +11,7 @@ export default async function Post(props: {
 
   const post = await reader.collections.posts.read(slug);
 
-  if (!post) return <div className="p-8 text-slate-500">Post not found!</div>;
+  if (!post) return <div className="p-8 text-slate-500 text-center">Page not found!</div>;
 
   const { node } = await post.content();
 
