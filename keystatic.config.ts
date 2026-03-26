@@ -17,5 +17,15 @@ export default config({
         content: fields.markdoc({ label: 'Content' }),
       },
     }),
+    content: collection({
+      label: 'Content',
+      slugField: 'title',
+      path: 'content/*',
+      format: { contentField: 'content' },
+      schema: {
+        title: fields.slug({ name: { label: 'Title' } }),
+        content: fields.markdoc({ label: 'Content' }),
+      },
+    }),
   },
 });
