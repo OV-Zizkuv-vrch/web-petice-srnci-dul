@@ -18,7 +18,12 @@ export default config({
       format: { contentField: 'content' },
       schema: {
         title: fields.slug({ name: { label: 'Title' } }),
-        content: fields.markdoc({ label: 'Content' }),
+        content: fields.markdoc({
+          label: 'Content',
+          options: {
+            image: { directory: 'public/images/content', publicPath: '/images/content/' },
+          },
+        }),
       },
     }),
     content: collection({
@@ -28,7 +33,12 @@ export default config({
       format: { contentField: 'content' },
       schema: {
         title: fields.slug({ name: { label: 'Title' } }),
-        content: fields.markdoc({ label: 'Content' }),
+        content: fields.markdoc({
+          label: 'Content',
+          options: {
+            image: { directory: 'public/images/content', publicPath: '/images/content/' },
+          },
+        }),
       },
     }),
   },
