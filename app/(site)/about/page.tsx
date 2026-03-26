@@ -8,9 +8,8 @@ const COMMITTEE_MEMBERS = [
 
 export default function AboutPage() {
   return (
-    <div className="h-full overflow-y-auto flex justify-center items-start p-6">
-      <div className="bg-white rounded-2xl shadow-xl p-10 max-w-2xl w-full my-auto">
-        <h1 className="text-3xl font-bold text-slate-800 mb-2">O nás</h1>
+    <>
+      <h1 className="text-3xl font-bold text-slate-800 mb-2">O nás</h1>
         <h2 className="text-xl font-semibold text-slate-600 mb-5">
           Osadní výbor Žižkův vrch
         </h2>
@@ -37,7 +36,6 @@ export default function AboutPage() {
             </li>
           ))}
         </ul>
-      </div>
-    </div>
+    </>
   );
 }

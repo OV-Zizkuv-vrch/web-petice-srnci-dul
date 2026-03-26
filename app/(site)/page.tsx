@@ -17,7 +17,7 @@ export default async function Homepage() {
   }
 
   return (
-    <div className="h-full overflow-y-auto px-8 prose prose-slate max-w-none">
+    <div className="prose prose-slate max-w-none">
       {petitionContent ?? <p className="text-slate-500">Obsah petice se načítá…</p>}
     </div>
   );

@@ -13,16 +13,20 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
       }}
     >
       {/* Centered column */}
-      <div className="flex flex-col w-full max-w-4xl shadow-2xl">
+      <div className="flex flex-col w-full max-w-5xl shadow-2xl">
         <Navbar />
 
         <div className="flex-1 overflow-hidden bg-white/92">
-          {children}
+          <div className="h-full overflow-y-auto flex justify-center items-start px-6 py-6">
+            <div className="bg-white rounded-2xl shadow-xl p-10 max-w-4xl w-full my-auto">
+              {children}
+            </div>
+          </div>
         </div>
 
         {/* Bottom CTA bar */}
         <div className="shrink-0 flex flex-col md:flex-row items-center gap-4 py-6 px-6 md:gap-6 md:py-8 md:px-10 bg-slate-800/90 backdrop-blur-sm border-t border-white/10">
-          <p className="text-white/90 text-sm leading-relaxed flex-1 text-center md:text-left">
+          <p className="text-white/90 text-sm leading-relaxed flex-1 text-center md:text-left hidden md:block">
             Přidejte svůj hlas k ostatním obyvatelům Žižkova vrchu. Vaše podpora je klíčová pro zachování
             přírodního rázu Srnčího dolu <strong>pro nás i pro budoucí generace</strong>.
           </p>
@@ -34,7 +38,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
           >
             Podepsat petici
           </a>
-          <p className="shrink-0 text-white/50 text-xs">
+          <p className="shrink-0 text-white/50 text-xs text-center md:text-left">
             Petice je vedena prostřednictvím<br />oficiální služby ePetice.
           </p>
         </div>
