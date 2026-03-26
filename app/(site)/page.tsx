@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ContentPage } from '../components/ContentPage';
+import { OG_IMAGE } from '../config';
 
 export const metadata: Metadata = {
   title: 'Petice za zachování Srnčího dolu',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     description:
       'Podepište petici za zachování přírodního charakteru Srnčího dolu. Přidejte svůj hlas k obyvatelům Žižkova vrchu.',
     url: '/',
+    images: [OG_IMAGE],
   },
 };
 

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ContentPage } from '../../components/ContentPage';
+import { OG_IMAGE } from '../../config';
 
 export const metadata: Metadata = {
   title: 'O nás',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     description:
       'Osadní výbor Žižkův vrch zastupuje zájmy obyvatel čtvrti v jednáních s primátorem a zastupiteli města.',
     url: '/about',
+    images: [OG_IMAGE],
   },
 };
 

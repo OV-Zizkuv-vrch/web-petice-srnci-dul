@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
-import { SITE_NAME, SITE_URL } from './config';
+import { SITE_NAME, SITE_URL, OG_IMAGE } from './config';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: 'cs_CZ',
     type: 'website',
-    images: [{ url: '/images/bg-main.jpg', width: 1200, height: 630 }],
+    images: [OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
