@@ -3,9 +3,10 @@ import { config, collection, fields } from '@keystatic/core';
 export const markdocConfig = fields.markdoc.createMarkdocConfig({});
 
 export default config({
-  storage: {
-    kind: 'local',
-  },
+  storage:
+    process.env.NODE_ENV === 'production'
+      ? { kind: 'cloud' }
+      : { kind: 'local' },
   collections: {
     posts: collection({
       label: 'Posts',
