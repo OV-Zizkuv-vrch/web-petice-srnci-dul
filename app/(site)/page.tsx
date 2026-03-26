@@ -17,11 +17,8 @@ export default async function Homepage() {
   }
 
   return (
-    <div className="h-full relative overflow-hidden flex flex-col">
-      <div className="absolute inset-0 bg-white/92" />
-      <div className="relative overflow-y-auto flex-1 p-8 prose prose-slate max-w-none">
-        {petitionContent ?? <p className="text-slate-500">Obsah petice se načítá…</p>}
-      </div>
+    <div className="h-full overflow-y-auto px-8 prose prose-slate max-w-none">
+      {petitionContent ?? <p className="text-slate-500">Obsah petice se načítá…</p>}
     </div>
   );
 }
