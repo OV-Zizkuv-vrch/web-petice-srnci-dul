@@ -25,6 +25,7 @@ Create a `.env.local` file in the project root. All variables prefixed with `NEX
 | `KEYSTATIC_GITHUB_CLIENT_ID` | GitHub OAuth app client ID (from Keystatic Cloud dashboard) |
 | `KEYSTATIC_GITHUB_CLIENT_SECRET` | GitHub OAuth app client secret |
 | `KEYSTATIC_SECRET` | Random secret string used to sign Keystatic sessions (min. 32 chars) |
+| `KEYSTATIC_CLOUD_PROJECT` | Keystatic Cloud project in `team/project` format (default: `ov-zizkuv-vrch/web-petice-srnci-dul`) |
 
 ### Optional
 

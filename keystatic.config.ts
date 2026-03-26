@@ -7,6 +7,9 @@ export default config({
     process.env.NODE_ENV === 'production'
       ? { kind: 'cloud' }
       : { kind: 'local' },
+  cloud: {
+    project: process.env.KEYSTATIC_CLOUD_PROJECT ?? 'ov-zizkuv-vrch/web-petice-srnci-dul',
+  },
   collections: {
     posts: collection({
       label: 'Posts',
