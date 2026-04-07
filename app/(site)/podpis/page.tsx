@@ -50,7 +50,7 @@ export default function PodpisPage() {
           <p className="text-slate-600 text-sm flex-1">
             Stáhněte si{' '}
             <a
-              href="/files/podpisovy-arch.pdf"
+              href="/files/podpisovy-arch-petice-srnci-dul.pdf"
               className="text-green-700 font-medium hover:underline"
             >
               podpisový arch
