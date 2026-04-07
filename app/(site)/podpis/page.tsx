@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { ContentPage } from '../../components/ContentPage';
 import { EPETITION_URL, OG_IMAGE } from '../../config';
 
+const PODPISOVY_ARCH_URL = '/files/podpisovy_arch_petice_srnci_dul.pdf';
+
 export const metadata: Metadata = {
   title: 'Podepsat petici – Srnčí důl',
   description:
@@ -50,7 +52,8 @@ export default function PodpisPage() {
           <p className="text-slate-600 text-sm flex-1">
             Stáhněte si{' '}
             <a
-              href="/files/podpisovy-arch-petice-srnci-dul.pdf"
+              href={PODPISOVY_ARCH_URL}
+              target="_blank"
               className="text-green-700 font-medium hover:underline"
             >
               podpisový arch
@@ -58,7 +61,8 @@ export default function PodpisPage() {
             , vytiskněte ho, vyplňte a odevzdejte na některém z podpisových míst (viz níže).
           </p>
           <a
-            href="/files/podpisovy-arch.pdf"
+            href={PODPISOVY_ARCH_URL}
+            target="_blank"
             className="inline-block text-center border border-slate-300 text-slate-700 font-semibold px-5 py-3 rounded-full hover:bg-slate-50 transition-colors text-sm"
           >
             Stáhnout arch (PDF)
