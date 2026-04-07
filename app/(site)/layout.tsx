@@ -32,6 +32,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
           </p>
           <Link
             href="/podpis"
+            data-umami-event="click_podepsat_footer"
             className="shrink-0 inline-block bg-green-600 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:bg-green-700 transition-colors"
           >
             Podepsat petici

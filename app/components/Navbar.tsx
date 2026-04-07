@@ -15,6 +15,7 @@ function NavbarCTAButton({ href, shortLabel, label }: { href: string; shortLabel
   return (
     <Link
       href={href}
+      data-umami-event="click_podepsat_navbar"
       className="inline-block bg-green-600 text-white font-semibold px-3 py-1.5 md:px-5 md:py-2 rounded-full shadow hover:bg-green-700 transition-colors text-xs md:text-sm whitespace-nowrap"
     >
       <span className="sm:hidden">{shortLabel}</span>

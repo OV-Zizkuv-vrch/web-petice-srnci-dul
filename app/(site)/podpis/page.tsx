@@ -39,6 +39,7 @@ export default function PodpisPage() {
             href={EPETITION_URL}
             target="_blank"
             rel="noopener noreferrer"
+            data-umami-event="click_podepsat_online"
             className="inline-block text-center bg-green-600 text-white font-semibold px-5 py-3 rounded-full shadow hover:bg-green-700 transition-colors text-sm"
           >
             Podepsat online
@@ -54,6 +55,7 @@ export default function PodpisPage() {
             <a
               href={PODPISOVY_ARCH_URL}
               target="_blank"
+              data-umami-event="click_podpisovy_arch_link"
               className="text-green-700 font-medium hover:underline"
             >
               podpisový arch
@@ -63,6 +65,7 @@ export default function PodpisPage() {
           <a
             href={PODPISOVY_ARCH_URL}
             target="_blank"
+            data-umami-event="click_stahnout_arch"
             className="inline-block text-center border border-slate-300 text-slate-700 font-semibold px-5 py-3 rounded-full hover:bg-slate-50 transition-colors text-sm"
           >
             Stáhnout arch (PDF)
