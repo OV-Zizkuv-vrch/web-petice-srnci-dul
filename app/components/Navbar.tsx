@@ -26,7 +26,7 @@ function NavbarCTAButton({ href, shortLabel, label }: { href: string; shortLabel
 
 export function Navbar() {
   return (
-    <nav className="flex items-center gap-4 md:gap-8 px-4 md:px-8 py-3 md:py-4 bg-white border-b border-slate-200 shrink-0">
+    <nav className="flex items-center gap-4 md:gap-8 px-4 md:px-8 py-3 md:py-4 bg-white border-b border-slate-200 shrink-0 sticky top-0 z-10">
       <NavbarLink href="/" title="Petice" />
       <NavbarLink href="/navrh" title="Návrh řešení" />
       <NavbarLink href="/about" title="O nás" />
