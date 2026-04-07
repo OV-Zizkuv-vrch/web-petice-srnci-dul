@@ -25,7 +25,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="cs">
-      <body>{children}</body>
+      <body>
+        {children}
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="841523de-0afd-4cce-9e7e-8963be62e3f5" />
+      </body>
     </html>
   );
 }
