@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { EPETITION_URL } from '../config';
 
 function NavbarLink({ href, title }: { href: string; title: string }) {
   return (
@@ -14,15 +13,13 @@ function NavbarLink({ href, title }: { href: string; title: string }) {
 
 function NavbarCTAButton({ href, shortLabel, label }: { href: string; shortLabel: string; label: string }) {
   return (
-    <a
+    <Link
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
       className="inline-block bg-green-600 text-white font-semibold px-3 py-1.5 md:px-5 md:py-2 rounded-full shadow hover:bg-green-700 transition-colors text-xs md:text-sm whitespace-nowrap"
     >
       <span className="sm:hidden">{shortLabel}</span>
       <span className="hidden sm:inline">{label}</span>
-    </a>
+    </Link>
   );
 }
 
@@ -34,7 +31,7 @@ export function Navbar() {
       <NavbarLink href="/about" title="O nás" />
       <div className="ml-auto">
         <NavbarCTAButton
-          href={EPETITION_URL}
+          href="/podpis"
           shortLabel="Podepsat"
           label="Podepsat petici" />
       </div>

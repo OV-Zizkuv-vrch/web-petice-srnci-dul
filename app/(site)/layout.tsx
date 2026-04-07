@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
+import Link from 'next/link';
 import { Navbar } from '../components/Navbar';
-import { EPETITION_URL } from '../config';
 
 export default function SiteLayout({ children }: { children: ReactNode }) {
   return (
@@ -30,17 +30,12 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
             Přidejte svůj hlas k ostatním obyvatelům Žižkova vrchu. Vaše podpora je klíčová pro zachování
             přírodního rázu Srnčího dolu <strong>pro nás i pro budoucí generace</strong>.
           </p>
-          <a
-            href={EPETITION_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/podpis"
             className="shrink-0 inline-block bg-green-600 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:bg-green-700 transition-colors"
           >
             Podepsat petici
-          </a>
-          <p className="shrink-0 text-white/50 text-xs text-center md:text-left">
-            Petice je vedena prostřednictvím<br />oficiální služby ePetice.
-          </p>
+          </Link>
         </div>
       </div>
     </div>

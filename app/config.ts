@@ -1,5 +1,6 @@
 export const EPETITION_URL =
-  process.env.NEXT_PUBLIC_EPETITION_URL ?? 'https://epetice.gov.cz/placeholder';
+  process.env.NEXT_PUBLIC_EPETITION_URL ??
+  'https://gov.cz/e-petice/1659-petice-za-alternativni-trasu-zapadni-tangenty-v-oblasti-srnciho-dolu-v-jablonci-nad-nisou';
 
 export const SITE_NAME = 'Petice – Srnčí důl';
 
