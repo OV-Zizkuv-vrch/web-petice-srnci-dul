@@ -32,8 +32,8 @@ export default function PodpisPage() {
           <div className="text-3xl">💻</div>
           <h2 className="text-lg font-bold text-slate-900">Online podpis</h2>
           <p className="text-slate-600 text-sm flex-1">
-            Podepište petici elektronicky prostřednictvím oficiální státní služby ePetice. <strong>Vyžaduje přihlášení
-            prostřednictvím Identity občana</strong> (přihlášení datovou schránkou pro podpis ePetice nezafunguje).
+            Podepište petici elektronicky prostřednictvím oficiální státní služby ePetice. <strong className="text-green-700">Vyžaduje přihlášení
+            prostřednictvím Identity občana</strong> (přihlášení <span className="text-red-600">datovou schránkou</span> pro podpis ePetice <span className="text-red-600">nezafunguje</span>).
           </p>
           <a
             href={EPETITION_URL}
